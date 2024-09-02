@@ -40,6 +40,19 @@ body {
 }
 
 /* Product Grid */
+.category-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.category {
+    text-align: center;
+    border-top: 1px solid #434343;
+    border-bottom: 1px solid #434343;
+    padding: 0px 40px;
+}
+
 .product-grid {
     display:flex;
     flex-direction: column;
@@ -90,6 +103,11 @@ body {
     color: #e74c3c;
     font-size: 1.2rem;
     margin-bottom: 10px;
+}
+
+.product-description {
+    font-style: italic;
+    color: #434343;
 }
 
 .product-image {
@@ -159,10 +177,19 @@ body {
     justify-content: center;
     width: 650px;
     font-size: 19px;
+    gap: 25px;
 }
 .cart{
     color: white;
     display: flex;
+    position: relative;
+}
+.cart_quantity {
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 26px;
+    font-size: 30px;
 }
 .cart_quantity_count{
     margin-top: 16px;
@@ -170,7 +197,6 @@ body {
     margin-left: 27px;
     position: absolute;
     font-size: 29px;
-
 }
 .plantname_heading{
    display: flex;
